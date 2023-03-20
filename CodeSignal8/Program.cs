@@ -5,48 +5,58 @@
         static void Main(string[] args)
         {
             int count = 0;
-            int[,] someint = {
-            { 1, 1, 1, 0},//9
-            { 0, 5, 0, 1},
-            { 2, 1, 3, 10}};
-            int[] collectArr = new int[someint.GetLength(1)];
-     
-            for (int erkar = 0; erkar < someint.GetLength(1); erkar++)//4 erkar
+            int[][] myArray = new int[3][];
+            myArray[0] = new int[] { 1, 2, 3, 8 };
+            myArray[1] = new int[] { 4, 5, 7, 9 };
+            myArray[2] = new int[] { 6, 7, 8, 9 };
+
+           // Console.WriteLine(myArray.GetLength(0)); //rows
+          //  Console.WriteLine(myArray[0].GetLength(0));//columns
+
+            //int rows = matrix.GetLength(0);
+            //int columns = matrix.GetLength(1);
+
+            //1, 1, 1, 0
+            //0, 5, 0, 1
+            //2, 1, 3, 10
+
+            //0, 1, 1, 2
+            //0, 5, 0, 0
+            //2, 0, 3, 3
+          
+
+
+
+            Program program = new Program();
+            Console.WriteLine(program.solution(myArray));
+        }
+
+
+        int solution(int[][] matrix)
+        {
+            int count = 0;
+            int rows = matrix.GetLength(0);
+            int columns = matrix[0].GetLength(0);
+
+            for (int i = 0; i < columns; i++)
             {
-             
-                for (int boy = 0; boy < someint.GetLength(0); boy++)//3 boy
+                for (int j = 0; j < rows; j++)
                 {
-                    if (someint[boy, erkar] ==0 )
+
+                    if (matrix[j][ i] == 0)
                     {
-                        for (int k = erkar; k < someint.GetLength(1); k++)
-                        {
-                            Console.WriteLine(someint[erkar,k ]);
-                        }
-
+                        break;
                     }
-
+                    else
+                    {
+                        count = count + matrix[j][i];
+                    }
                 }
             }
-            //for (int i = 0; i < someint.GetLength(1); i++)
-            //{
-            //    for (int j = 0; j < someint.GetLength(0); j++)
-            //    {
-            //        Console.WriteLine(someint[j, i]);
 
-            //    }
-            //}
+            return count;
 
-            //for (int i = 0; i < someint.GetLength(1); i++)//4 erkar
-            //{
-
-            //    for (int j = 0; j < someint.GetLength(0); j++)//3 boy
-            //    {
-
-            //        count = count + someint[j, i];
-
-            //    }
-            //}
-            // Console.WriteLine(count);
         }
+
     }
 }
