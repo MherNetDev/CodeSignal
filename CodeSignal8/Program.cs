@@ -23,9 +23,6 @@
             //0, 1, 1, 2
             //0, 5, 0, 0
             //2, 0, 3, 3
-          
-
-
 
             Program program = new Program();
             Console.WriteLine(program.solution(myArray));
@@ -44,19 +41,12 @@
                 {
 
                     if (matrix[j][ i] == 0)
-                    {
                         break;
-                    }
                     else
-                    {
                         count = count + matrix[j][i];
-                    }
                 }
             }
-
             return count;
-
         }
-
     }
 }
