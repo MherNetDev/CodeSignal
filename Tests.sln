@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeSignal6", "CodeSignal6\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeSignal7", "CodeSignal7\CodeSignal7.csproj", "{6B247F19-2215-49CB-AABD-C7A5F4E99C54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeSignal8", "CodeSignal8\CodeSignal8.csproj", "{BF25239D-E6F8-4EE3-B811-FF206802C959}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeSignal8", "CodeSignal8\CodeSignal8.csproj", "{BF25239D-E6F8-4EE3-B811-FF206802C959}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeSignal9", "CodeSignal9\CodeSignal9.csproj", "{2E6682D1-A846-4FEB-A8FE-270C1819AFC9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{BF25239D-E6F8-4EE3-B811-FF206802C959}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF25239D-E6F8-4EE3-B811-FF206802C959}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF25239D-E6F8-4EE3-B811-FF206802C959}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E6682D1-A846-4FEB-A8FE-270C1819AFC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E6682D1-A846-4FEB-A8FE-270C1819AFC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E6682D1-A846-4FEB-A8FE-270C1819AFC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E6682D1-A846-4FEB-A8FE-270C1819AFC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
