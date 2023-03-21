@@ -9,14 +9,14 @@ namespace CodeSignal13
         {
             string inputString = "foo(bar(baz))blim";
             Program program = new Program();
-            program.solution1(inputString);
-            string str = inputString;
-            while (str.Contains("("))
-            {
-                str = Regex.Replace(str, @"\(\w*\)", match => {
-                    return String.Concat(match.Value.Trim(new[] { '(', ')' }).Reverse());
-                });
-            }
+            program.solution(inputString);
+            //string str = inputString;
+            //while (str.Contains("("))
+            //{
+            //    str = Regex.Replace(str, @"\(\w*\)", match => {
+            //        return String.Concat(match.Value.Trim(new[] { '(', ')' }).Reverse());
+            //    });
+            //}
 
         }
         string solution1(string str)
